@@ -1,0 +1,12 @@
+{
+  "name": "aws-sqs-pubsub",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "author": "wjsc",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.476.0"
+  }
+}
