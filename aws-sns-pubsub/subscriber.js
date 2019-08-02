@@ -36,8 +36,9 @@ app.post('/confirm', async (req, res) => {
     const body = JSON.parse(req.body);
     if(body.Token){
         const result = await confirm(sns, body.Token, TopicArn, 'false');
+        res.status(200).send(JSON.stringify(result));
     }
-    res.status(200).send(JSON.stringify(result));
+    res.status(200).send('Notification received');
   }
   catch(error){
     console.log(error);
